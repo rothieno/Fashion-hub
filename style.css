@@ -1,0 +1,187 @@
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffafa;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #3b1728;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    font-size: 26px;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #ffb6c1;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(
+        rgba(59, 23, 40, 0.7),
+        rgba(59, 23, 40, 0.7)
+    ), url("https://images.unsplash.com/photo-1483985988355-763728e1935b?w=1600");
+    background-size: cover;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.button {
+    background-color: #e879a0;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Shop Section */
+.shop {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.shop h2 {
+    font-size: 32px;
+    color: #3b1728;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.product {
+    background-color: white;
+    width: 260px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+}
+
+.product-image {
+    font-size: 75px;
+    padding: 20px;
+}
+
+.product h3 {
+    color: #3b1728;
+}
+
+.product p {
+    margin: 10px 0;
+    color: #e879a0;
+    font-weight: bold;
+}
+
+.product button {
+    background-color: #3b1728;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #e879a0;
+}
+
+/* About Section */
+.about {
+    background-color: #fce4ec;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.about h2,
+.contact h2 {
+    color: #3b1728;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #3b1728;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .products {
+        flex-direction: column;
+        align-items: center;
+    }
+}
